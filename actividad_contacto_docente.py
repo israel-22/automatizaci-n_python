@@ -152,30 +152,28 @@ for i in range(filas - 1, 0, -1):
 
 # ejercicio 7 usando for:
 
-# ejercicio 7 usando for:
-
 # Solicitar al usuario el número de filas para la flecha
 filas = int(input("Ingresa el número de filas para la flecha hueca: "))
 
 # Parte ascendente (pirámide hueca)
 for i in range(1, filas + 1):
     if i == 1:
-        print(" " * (filas - i) + "*")  # Solo un asterisco en la punta
+        print(" "+" " * (filas - i) + "*")  # Solo un asterisco en la punta
     else:
-        print(" " * (filas - i) + "*" + " " * (1* i - 2) + "*")  # Asteriscos en los bordes
+        print(" " * (filas - i) +" "+ "*"  + " " * (1* i - 2) + "*")  # Asteriscos en los bordes
 
 # Fila recta
 # print(" " * (2 * filas-1))
 
-print("* " ," " * (filas -4) + "*" * (2 * filas - 1))
+print("*" + " "+" "," " * (filas -4) + "*" * (2 * filas - 1))
 
 
 # Parte descendente (pirámide hueca invertida)
 for i in range(filas - 0,  0, -1):
     if i == 1:
-        print(" " * (filas - i) + "*")  # Solo un asterisco en la base
+        print(" "+" " * (filas - i) + "*")  # Solo un asterisco en la base
     else:
-        print(" " * (filas - i) + "*" + " " * (1 * i - 2) + "*")  # Asteriscos en los bordes
+        print(" " * (filas - i) +" "+ "*" + " " * (1 * i - 2) + "*")
 
 
 
